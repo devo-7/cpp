@@ -1,0 +1,37 @@
+#include<iostream>
+main(){
+	int g,ay,y;
+	int yg=0,ya=0,yy=0;
+	gun:
+	printf("Lutfen gun gir:");
+	scanf("%d",&g);
+	if (g>30||g<0){
+		printf("yanlis sayi\n");
+		goto gun;
+	}
+	ay:printf("Lutfen ay gir:");
+	scanf("%d",&ay);
+	if (ay>12||ay<0){
+		printf("yanlis sayi\n");
+		goto ay;
+	}
+	yil:printf("Lutfen yil gir:");
+	scanf("%d",&y);
+	if (y>2026||y<0){
+		printf("bu seneye daha gecmedik lutfen dogru sayi gir\n");
+		goto yil;
+	}
+	yg=g+1;
+	ya=ay;
+	yy=y;
+	if (yg==31){
+		yg=1;
+		ya++;
+		if(ya==13){
+			ya=1;
+			yy++;
+		}
+	}
+	printf("bugun:%d/%d/%d",yg,ya,yy);
+	
+}

@@ -1,0 +1,25 @@
+#include<iostream>
+main(){
+	int p,a,b,c,d,e,f,h;
+	limit:
+	printf("Ne kadar para harcadiniz?\n");
+	scanf("%d",&p);
+	if(p>1000||p<0){
+		printf("Bu kadar paran olamaz )\n");
+		goto limit;
+	}
+	a=p/200;
+	b=p/100;
+	c=p/50;
+	d=p/20;
+	e=p/10;
+	f=p/5;
+	h=p/1;
+	printf("%d-adet 200 lik\n",a);
+	printf("%d-adet 100 lik\n",b);
+	printf("%d-adet 50 lik\n",c);
+	printf("%d-adet 20 lik\n",d);
+	printf("%d-adet 10 lik\n",e);
+	printf("%d-adet 5 lik\n",f);
+	printf("%d-adet 1 lik",h);
+}
