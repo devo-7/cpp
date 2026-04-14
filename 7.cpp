@@ -6,7 +6,7 @@ main(){
 	printf("2 sayiyi gir:");
 	scanf("%d",&s2);
 	for(int i=0;i<s2;i++){
-		s=s1+s2;
+		s=s+s1;
 	}
 	printf("%d",s);
 }
